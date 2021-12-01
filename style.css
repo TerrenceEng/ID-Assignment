@@ -1,0 +1,50 @@
+.background {
+  z-index: -1;
+  position: absolute;
+}
+
+.head-font {
+  font-family: "Spectral", serif;
+}
+
+.body-font {
+  font-family: "Karla", sans-serif;
+}
+
+.top-colour {
+  display: flex;
+  background-color: lightblue;
+  line-height: 150px;
+  font-size: 50px;
+}
+
+.flex-centering {
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.flex-introduction {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-footer2 {
+  flex-direction: column;
+}
+
+.flex-links {
+  display: flex;
+  width: 100px;
+  margin: 50px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
