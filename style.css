@@ -1,6 +1,6 @@
 .background {
-  z-index: -1;
-  position: absolute;
+  z-index: -2;
+  position: fixed;
 }
 
 .head-font {
@@ -18,25 +18,25 @@
   font-size: 50px;
 }
 
-.flex-centering {
-  display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-
-.flex-introduction {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
 .flex-footer {
   display: flex;
   justify-content: space-evenly;
 }
 
 .flex-footer2 {
+  flex-direction: column;
+}
+
+/*index.html*/
+.flex-centering {
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.flex-introduction {
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -47,4 +47,58 @@
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+}
+
+/*education.html*/
+.flex-rightside {
+  display: flex;
+  flex-direction: column;
+  margin-left: 850px;
+  margin-right: 300px;
+  background-color: aliceblue;
+}
+
+.flex-leftside {
+  display: flex;
+  flex-direction: column;
+  margin-right: 850px;
+  margin-left: 300px;
+  background-color: aliceblue;
+}
+
+.arrow {
+  z-index: -1;
+  position: absolute;
+  right: 625px;
+  height: 1000px;
+  width: 250px;
+}
+
+/*projects*/
+.flexbox {
+  display: flex;
+}
+
+.text {
+  flex-direction: column;
+  margin-right: 150px;
+  margin-left: 100px;
+}
+
+.firstImage {
+  height: 500px;
+  width: 1000px;
+  margin-right: 200px;
+}
+
+.secondImage {
+  height: 400px;
+  width: 800px;
+  margin-right: 100px;
+}
+
+.thirdImage {
+  height: 500px;
+  width: 1000px;
+  margin-right: 200px;
 }
