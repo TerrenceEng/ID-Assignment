@@ -41,19 +41,6 @@ Never used any technologies
 TESTING
 my project usually has an image and a text side by side or a text on one side or the other on the laptop view but on mobile view, the text and image are usually ontop of each other.
 
-Content
-
-- {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  }
-  is taken from https://stackoverflow.com/questions/18772154/white-space-at-top-of-page/18772399
-
 Media
 The Facebook icon taken from: https://www.flaticon.com/free-icon/facebook_1409943
 The Instagram icon taken from: https://www.flaticon.com/free-icon/instagram_1409946
