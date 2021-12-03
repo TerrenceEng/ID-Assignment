@@ -1,13 +1,35 @@
-/* Computer devices */
+/* footer & head */
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
 .background {
   z-index: -2;
   position: fixed;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .head-font {
   font-family: "Spectral", serif;
   font-size: 50px;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .body-font {
@@ -17,19 +39,21 @@
 
 .top-colour {
   display: flex;
-  background-color: lightblue;
-  line-height: 150px;
+  justify-content: space-between;
+  line-height: 100px;
   font-size: 50px;
+  background-color: orange;
+  color: white;
 }
 
 .flex-footer {
   display: flex;
   justify-content: space-evenly;
-  background-color: lightblue;
 }
 
 .flex-footer2 {
   flex-direction: column;
+  color: brown;
 }
 
 .blacken {
@@ -45,13 +69,20 @@
   margin-left: 300px;
 }
 
+.image {
+  width: 100%;
+  margin: 50px;
+  border-radius: 50%;
+}
+
 .flex-introduction {
   flex-wrap: wrap;
   flex-direction: column;
   margin-right: 300px;
+  color: white;
 }
 
-.flex-links {
+.linkbox {
   display: flex;
 }
 
@@ -61,63 +92,103 @@
   line-height: 75px;
   font-size: 30px;
   border-radius: 5%;
+  text-decoration: none;
+  color: black;
 }
 
 /*education.html*/
 .flex-rightside {
   display: flex;
   flex-direction: column;
-  margin-left: 850px;
   margin-right: 300px;
+  margin-left: 800px;
 }
 
 .flex-leftside {
   display: flex;
   flex-direction: column;
-  margin-right: 850px;
   margin-left: 300px;
+  margin-right: 800px;
 }
+
 .arrow {
   z-index: -1;
   position: absolute;
-  right: 625px;
-  height: 1680px;
+  right: 645px;
+  height: 1080px;
   width: 250px;
 }
 
 /*projects*/
+
 .flexbox {
   display: flex;
 }
 
 .text {
+  display: flex;
   flex-direction: column;
-  margin-right: 150px;
-  margin-left: 100px;
+  margin: 100px;
 }
 
 .firstImage {
   height: 500px;
   width: 1000px;
-  margin-right: 200px;
 }
 
 .secondImage {
   height: 400px;
   width: 800px;
-  margin-right: 100px;
 }
 
 .thirdImage {
-  height: 500px;
-  width: 1000px;
-  margin-right: 200px;
+  height: 250px;
+  width: 250px;
+  margin-left: 200px;
+}
+
+.fourthImage {
+  height: 350px;
+  width: 700px;
+}
+
+.stackedImages {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Mobile Devices */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 576px and down) */
+@media screen and (max-width: 576px) {
+  .top-colour {
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+    font-size: 30px;
+    background-color: orange;
+    color: white;
+  }
+
+  .flex-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* index.html */
+  .flex-centering {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .image {
+    width: 250px;
+    margin-right: 325px;
+    border-radius: 50%;
+  }
+
+  /* education.html */
   .flex-rightside {
     display: flex;
     flex-direction: column;
@@ -129,16 +200,44 @@
     flex-direction: column;
     margin: 20px;
   }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+  /* projects.html */
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+  }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
+  .text {
+    font-size: 20px;
+    margin: 20px;
+  }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+  .firstImage {
+    width: 400px;
+    height: 400px;
+    margin-left: 7px;
+  }
+
+  .secondImage {
+    width: 400px;
+    height: 250px;
+    margin-left: 8px;
+  }
+
+  .thirdImage {
+    height: 200px;
+    width: 200px;
+    margin-left: 90px;
+  }
+
+  .fourthImage {
+    height: 300px;
+    width: 400px;
+    margin-left: 7px;
+  }
+
+  .stackedImages {
+    display: flex;
+    flex-direction: column;
+  }
 }
