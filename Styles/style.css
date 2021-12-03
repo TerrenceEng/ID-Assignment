@@ -1,3 +1,5 @@
+/* Computer devices */
+
 .background {
   z-index: -2;
   position: fixed;
@@ -5,10 +7,12 @@
 
 .head-font {
   font-family: "Spectral", serif;
+  font-size: 50px;
 }
 
 .body-font {
   font-family: "Karla", sans-serif;
+  font-size: 20px;
 }
 
 .top-colour {
@@ -21,32 +25,42 @@
 .flex-footer {
   display: flex;
   justify-content: space-evenly;
+  background-color: lightblue;
 }
 
 .flex-footer2 {
   flex-direction: column;
 }
 
+.blacken {
+  text-decoration: none;
+  color: black;
+}
+
 /*index.html*/
 .flex-centering {
   display: flex;
-  margin-left: 200px;
-  margin-right: 200px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
 }
 
 .flex-introduction {
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-wrap: wrap;
   flex-direction: column;
+  margin-right: 300px;
 }
 
 .flex-links {
   display: flex;
-  width: 100px;
-  margin: 50px;
+}
+
+.link {
+  width: 150px;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+  border-radius: 5%;
 }
 
 /*education.html*/
@@ -55,7 +69,6 @@
   flex-direction: column;
   margin-left: 850px;
   margin-right: 300px;
-  background-color: aliceblue;
 }
 
 .flex-leftside {
@@ -63,14 +76,12 @@
   flex-direction: column;
   margin-right: 850px;
   margin-left: 300px;
-  background-color: aliceblue;
 }
-
 .arrow {
   z-index: -1;
   position: absolute;
   right: 625px;
-  height: 1000px;
+  height: 1680px;
   width: 250px;
 }
 
@@ -101,4 +112,33 @@
   height: 500px;
   width: 1000px;
   margin-right: 200px;
+}
+
+/* Mobile Devices */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flex-rightside {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .flex-leftside {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
